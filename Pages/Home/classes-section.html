@@ -1,0 +1,248 @@
+<div class="classes-section">
+
+  <!-- Section Header -->
+  <div class="classes-header">
+    <div class="classes-header-label">
+      <div class="classes-header-line"></div>
+      <span>Our Classes</span>
+      <div class="classes-header-line"></div>
+    </div>
+    <h2 class="classes-header-title">Explore Our Yoga Classes</h2>
+  </div>
+
+  <!-- Classes Grid -->
+  <div class="classes-grid">
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Vinyasa Flow" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Vinyasa Flow</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Hatha Yoga" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Hatha Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Yin Yoga" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Yin Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Power Yoga" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Power Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Kundalini Yoga" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Kundalini Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+    <div class="classes-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Asana Yoga" />
+      <div class="classes-card-overlay"></div>
+      <div class="classes-card-content">
+        <h3>Asana Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="#" class="classes-card-btn">Start Class</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+    /* Section Wrapper */
+.classes-section {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.classes-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.classes-header-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.classes-header-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.classes-header-line {
+  height: 1px;
+  width: 120px;
+  background-color: #809AB1;
+}
+
+.classes-header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0;
+  line-height: 1.15;
+}
+
+/* Grid */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.classes-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 360px;
+}
+
+.classes-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.classes-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Dark Gradient Overlay */
+.classes-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to top, rgba(14, 44, 79, 0.85) 0%, rgba(14, 44, 79, 0) 100%);
+  pointer-events: none;
+}
+
+/* Card Content */
+.classes-card-content {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+}
+
+.classes-card-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.classes-card-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+}
+
+/* Start Class Button */
+.classes-card-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0E2C4F;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.classes-card-btn:hover {
+  background-color: #204878;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .classes-section {
+    padding: 60px 40px;
+  }
+
+  .classes-header-title {
+    font-size: 40px;
+  }
+
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .classes-card {
+    height: 320px;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .classes-section {
+    padding: 48px 24px;
+  }
+
+  .classes-header-title {
+    font-size: 30px;
+  }
+
+  .classes-header-line {
+    width: 60px;
+  }
+
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .classes-card {
+    height: 300px;
+  }
+}
+</style>

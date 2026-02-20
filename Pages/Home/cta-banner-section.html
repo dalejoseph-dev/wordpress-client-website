@@ -1,0 +1,196 @@
+<div class="cta-banner-section">
+
+  <!-- Background Image -->
+  <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Yoga Group" class="cta-banner-bg" />
+
+  <!-- Dark Overlay -->
+  <div class="cta-banner-overlay"></div>
+
+  <!-- Content -->
+  <div class="cta-banner-content">
+
+    <!-- Left Text -->
+    <div class="cta-banner-left">
+      <div class="cta-banner-label">
+        <span>Get Started</span>
+        <div class="cta-banner-label-line"></div>
+      </div>
+      <h2 class="cta-banner-title">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</h2>
+    </div>
+
+    <!-- Right Circle Button -->
+    <div class="cta-banner-right">
+      <a href="#" class="cta-banner-circle-btn">Get Started</a>
+    </div>
+
+  </div>
+</div>
+
+<style>
+    /* Section Wrapper */
+.cta-banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Background Image */
+.cta-banner-bg {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark Overlay */
+.cta-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(14, 44, 79, 0.75) 0%,
+    rgba(14, 44, 79, 0.45) 50%,
+    rgba(14, 44, 79, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Content Layer */
+.cta-banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  gap: 60px;
+}
+
+/* Left Text */
+.cta-banner-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Label */
+.cta-banner-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-banner-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #C6CCC6;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.cta-banner-label-line {
+  height: 1px;
+  width: 120px;
+  background-color: #809AB1;
+}
+
+/* Title */
+.cta-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Right Circle Button */
+.cta-banner-right {
+  flex-shrink: 0;
+}
+
+.cta-banner-circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #0E2C4F;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  padding: 20px;
+}
+
+.cta-banner-circle-btn:hover {
+  background-color: #204878;
+  color: #ffffff;
+  transform: scale(1.06);
+  text-decoration: none;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .cta-banner-bg {
+    height: 420px;
+  }
+
+  .cta-banner-content {
+    padding: 0 48px;
+    gap: 40px;
+  }
+
+  .cta-banner-title {
+    font-size: 36px;
+  }
+
+  .cta-banner-circle-btn {
+    width: 120px;
+    height: 120px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .cta-banner-section {
+    border-radius: 10px;
+  }
+
+  .cta-banner-bg {
+    height: 480px;
+  }
+
+  .cta-banner-overlay {
+    background: rgba(14, 44, 79, 0.65);
+  }
+
+  .cta-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 28px;
+    gap: 32px;
+  }
+
+  .cta-banner-title {
+    font-size: 28px;
+  }
+
+  .cta-banner-circle-btn {
+    width: 110px;
+    height: 110px;
+    font-size: 13px;
+  }
+}
+</style>

@@ -1,0 +1,321 @@
+<div class="testi-section">
+
+  <!-- Left Column -->
+  <div class="testi-left">
+
+    <!-- Label -->
+    <div class="testi-label">
+      <span>Testimonials</span>
+      <div class="testi-label-line"></div>
+    </div>
+
+    <!-- Title -->
+    <h2 class="testi-title">Hear From Our Clients</h2>
+
+    <!-- Testimonial Slides -->
+    <div class="testi-slider">
+
+      <div class="testi-slide active">
+        <p class="testi-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapib."</p>
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="testi-author">
+          <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Sarah Lin" />
+          <div class="testi-author-info">
+            <h4>Sarah Lin</h4>
+            <p>Yoga Enthusiast</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-slide">
+        <p class="testi-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus."</p>
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="testi-author">
+          <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Mark Davis" />
+          <div class="testi-author-info">
+            <h4>Mark Davis</h4>
+            <p>Wellness Coach</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-slide">
+        <p class="testi-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper."</p>
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="testi-author">
+          <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Anna Cruz" />
+          <div class="testi-author-info">
+            <h4>Anna Cruz</h4>
+            <p>Mindfulness Practitioner</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="testi-nav">
+      <button class="testi-prev" id="testiPrev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6"/></svg>
+      </button>
+      <button class="testi-next" id="testiNext">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9,18 15,12 9,6"/></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Right Column - Image -->
+  <div class="testi-right">
+    <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Yoga Class" />
+  </div>
+
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.testi-slide');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  document.getElementById('testiNext').addEventListener('click', function() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  document.getElementById('testiPrev').addEventListener('click', function() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+</script>
+
+<style>
+    /* Section Wrapper */
+.testi-section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: #C6CCC6;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Column */
+.testi-left {
+  flex: 1;
+}
+
+/* Label */
+.testi-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.testi-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.testi-label-line {
+  height: 1px;
+  width: 120px;
+  background-color: #809AB1;
+}
+
+/* Title */
+.testi-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #0E2C4F;
+  line-height: 1.15;
+  margin: 0 0 40px 0;
+}
+
+/* Slider */
+.testi-slider {
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 36px;
+}
+
+.testi-slide {
+  display: none;
+  animation: testi-fade 0.4s ease;
+}
+
+.testi-slide.active {
+  display: block;
+}
+
+@keyframes testi-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Quote */
+.testi-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #1C3C68;
+  line-height: 1.8;
+  margin: 0 0 24px 0;
+  font-style: italic;
+}
+
+/* Stars */
+.testi-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.testi-stars span {
+  color: #204878;
+  font-size: 20px;
+}
+
+/* Author */
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testi-author img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #809AB1;
+  flex-shrink: 0;
+}
+
+.testi-author-info h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0 0 4px 0;
+}
+
+.testi-author-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #809AB1;
+  margin: 0;
+}
+
+/* Navigation */
+.testi-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testi-prev,
+.testi-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid #809AB1;
+  background-color: transparent;
+  color: #1C3C68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.testi-prev:hover,
+.testi-next:hover {
+  background-color: #1C3C68;
+  border-color: #1C3C68;
+  color: #ffffff;
+}
+
+.testi-prev:active,
+.testi-next:active,
+.testi-prev:focus,
+.testi-next:focus {
+  background-color: #1C3C68;
+  border-color: #1C3C68;
+  color: #ffffff;
+  outline: none;
+}
+
+/* Right Column - Image */
+.testi-right {
+  flex: 0 0 380px;
+}
+
+.testi-right img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .testi-section {
+    gap: 40px;
+    padding: 60px 40px;
+  }
+
+  .testi-title {
+    font-size: 36px;
+  }
+
+  .testi-right {
+    flex: 0 0 300px;
+  }
+
+  .testi-right img {
+    height: 420px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .testi-section {
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 40px;
+  }
+
+  .testi-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .testi-right img {
+    height: 300px;
+  }
+
+  .testi-title {
+    font-size: 30px;
+  }
+
+  .testi-quote {
+    font-size: 16px;
+  }
+}
+</style>

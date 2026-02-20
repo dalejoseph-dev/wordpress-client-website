@@ -1,0 +1,93 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital&display=swap" rel="stylesheet">
+
+<div class="brands-section">
+  <p class="brands-title">We team up with trusted brands and experts</p>
+  
+  <div class="brands-grid">
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-1-2.png" alt="Brand 1" />
+    </div>
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-2-2.png" alt="Brand 2" />
+    </div>
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-3-1.png" alt="Brand 3" />
+    </div>
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-4-1.png" alt="Brand 4" />
+    </div>
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-5-1.png" alt="Brand 5" />
+    </div>
+    <div class="brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-2-2-1.png" alt="Brand 6" />
+    </div>
+  </div>
+</div>
+
+<style>
+.brands-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.brands-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #0E2C4F;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-card {
+  background-color: #ffffff;
+  border: 1px solid #809AB1;
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 80px;
+  transition: box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+  box-shadow: 0 4px 16px rgba(32, 72, 120, 0.12);
+}
+
+.brand-card img {
+  max-width: 100%;
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+.brand-card img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .brands-grid {
+    gap: 12px;
+  }
+  .brand-card {
+    width: 140px;
+    height: 70px;
+    padding: 16px 20px;
+  }
+}
+</style>

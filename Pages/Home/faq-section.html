@@ -1,0 +1,304 @@
+<div class="faq-section">
+
+  <!-- Left Column -->
+  <div class="faq-left">
+    <div class="faq-label">
+      <span>FAQs</span>
+      <div class="faq-label-line"></div>
+    </div>
+    <h2 class="faq-title">Your Questions Answered</h2>
+    <p class="faq-desc">Find quick answers to the most common questions about Nivaya's classes, services, and how we support your wellness journey.</p>
+  </div>
+
+  <!-- Right Column - Accordion -->
+  <div class="faq-right">
+
+    <div class="faq-item active">
+      <button class="faq-question">
+        <span class="faq-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18,15 12,9 6,15"/></svg>
+        </span>
+        <span>What Should I Bring To My First Yoga Session?</span>
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="faq-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </span>
+        <span>Are The Classes Suitable For Beginners?</span>
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="faq-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </span>
+        <span>Do I Need To Book In Advance?</span>
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="faq-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </span>
+        <span>What Is Your Cancellation Policy For Classes?</span>
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const item = this.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('active');
+        el.querySelector('.faq-icon svg').innerHTML = '<polyline points="6,9 12,15 18,9"/>';
+      });
+
+      // Open clicked if it was closed
+      if (!isActive) {
+        item.classList.add('active');
+        item.querySelector('.faq-icon svg').innerHTML = '<polyline points="6,9 12,15 18,9" />';
+      }
+    });
+  });
+</script>
+
+<style>
+    /* Section Wrapper */
+.faq-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Column */
+.faq-left {
+  flex: 0 0 320px;
+  max-width: 320px;
+  position: sticky;
+  top: 100px;
+}
+
+/* Label */
+.faq-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.faq-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.faq-label-line {
+  height: 1px;
+  width: 120px;
+  background-color: #809AB1;
+}
+
+/* Title */
+.faq-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #0E2C4F;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+}
+
+/* Description */
+.faq-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Right Column */
+.faq-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* FAQ Item */
+.faq-item {
+  background-color: #ffffff;
+  border: 1px solid #809AB1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item.active {
+  border-color: #1C3C68;
+  background-color: #1C3C68;
+  box-shadow: 0 4px 20px rgba(28, 60, 104, 0.2);
+}
+
+.faq-item.active .faq-question {
+  background-color: #1C3C68;
+}
+
+.faq-item.active .faq-question:hover {
+  background-color: #1C3C68;
+}
+
+.faq-item.active .faq-question span:last-child {
+  color: #ffffff;
+}
+
+.faq-item.active .faq-icon {
+  background-color: #0E2C4F;
+  color: #ffffff;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+  background-color: #ffffff;
+}
+
+.faq-item.active .faq-answer p {
+  color: #1C3C68;
+}
+
+/* Question Button */
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0f3f6;
+}
+
+/* Icon Circle */
+.faq-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #C6CCC6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #1C3C68;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  background-color: #204878;
+  color: #ffffff;
+}
+
+/* Question Text */
+.faq-question span:last-child {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0E2C4F;
+  line-height: 1.3;
+}
+
+/* Answer */
+.faq-answer {
+  display: none;
+  padding: 0 28px 24px 84px;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-answer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .faq-section {
+    gap: 40px;
+    padding: 60px 40px;
+  }
+
+  .faq-left {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+
+  .faq-title {
+    font-size: 38px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 40px;
+  }
+
+  .faq-left {
+    flex: unset;
+    max-width: 100%;
+    position: static;
+  }
+
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+
+  .faq-question {
+    padding: 18px 20px;
+  }
+}
+</style>

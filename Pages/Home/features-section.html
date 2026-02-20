@@ -1,0 +1,98 @@
+<div class="yoga-features-section">
+  <div class="yoga-feature-item">
+    <div class="yoga-feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1.5" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+    </div>
+    <h3>Nivaya Leads Wellness</h3>
+    <p>We set the standard in mindful yoga and personal growth.</p>
+  </div>
+
+  <div class="yoga-feature-item">
+    <div class="yoga-feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1.5" viewBox="0 0 24 24">
+        <circle cx="9" cy="7" r="3"/>
+        <circle cx="15" cy="7" r="3"/>
+        <path d="M2 20c0-3 3-5 7-5"/>
+        <path d="M22 20c0-3-3-5-7-5"/>
+        <path d="M8 20c0-3 1.8-5 4-5s4 2 4 5"/>
+      </svg>
+    </div>
+    <h3>Trusted By Many</h3>
+    <p>Nivaya is chosen for quality, care, and transformation.</p>
+  </div>
+</div>
+
+<style>
+.yoga-features-section {
+  display: flex;
+  gap: 60px;
+  padding: 60px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.yoga-feature-item {
+  flex: 1;
+}
+
+.yoga-feature-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #809AB1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.yoga-feature-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0E2C4F;
+  margin: 0 0 12px 0;
+}
+
+.yoga-feature-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 280px;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .yoga-features-section {
+    gap: 36px;
+    padding: 50px 40px;
+  }
+  .yoga-feature-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+  .yoga-feature-item h3 {
+    font-size: 18px;
+  }
+  .yoga-feature-item p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .yoga-features-section {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 36px;
+  }
+}
+</style>

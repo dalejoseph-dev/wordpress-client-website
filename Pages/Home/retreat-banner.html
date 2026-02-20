@@ -1,0 +1,206 @@
+<div class="retreat-banner">
+  <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Yoga Retreat" />
+  
+  <div class="retreat-overlay"></div>
+
+  <div class="retreat-text">
+    <h2>Your Soulful Retreat Awaits</h2>
+    <p>Step away from the noise and into a serene, healing yoga experience surrounded by nature.</p>
+  </div>
+
+  <button class="retreat-play-btn" onclick="document.getElementById('retreat-video-popup').style.display='flex'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+      <polygon points="6,3 20,12 6,21" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Video Popup Modal -->
+<div id="retreat-video-popup" class="retreat-modal">
+  <div class="retreat-modal-inner">
+    <button class="retreat-modal-close" onclick="document.getElementById('retreat-video-popup').style.display='none'">✕</button>
+    <iframe
+      width="100%"
+      height="100%"
+      src="YOUR-YOUTUBE-EMBED-URL"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<style>
+    /* Banner Container */
+.retreat-banner {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Background Image */
+.retreat-banner img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark gradient overlay at bottom */
+.retreat-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+}
+
+/* Text - bottom left */
+.retreat-text {
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
+  right: 200px;
+}
+
+.retreat-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.retreat-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* Play Button - bottom right */
+.retreat-play-btn {
+  position: absolute;
+  bottom: 48px;
+  right: 48px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.retreat-play-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.08);
+}
+
+/* Video Modal */
+.retreat-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.retreat-modal-inner {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.retreat-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .retreat-banner img {
+    height: 400px;
+  }
+
+  .retreat-text {
+    bottom: 36px;
+    left: 36px;
+    right: 160px;
+  }
+
+  .retreat-text h2 {
+    font-size: 34px;
+  }
+
+  .retreat-play-btn {
+    bottom: 36px;
+    right: 36px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .retreat-banner img {
+    height: 320px;
+    border-radius: 10px;
+  }
+
+  .retreat-text {
+    bottom: 24px;
+    left: 24px;
+    right: 90px;
+  }
+
+  .retreat-text h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .retreat-text p {
+    font-size: 12px;
+  }
+
+  .retreat-play-btn {
+    bottom: 24px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .retreat-modal-inner {
+    width: 95%;
+    height: 240px;
+  }
+}
+</style>

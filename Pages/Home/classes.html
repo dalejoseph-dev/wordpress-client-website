@@ -1,0 +1,188 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+
+<div class="yoga-classes-section">
+
+  <!-- Left Column -->
+  <div class="yoga-classes-left">
+    <h2 class="yoga-classes-title">Popular Yoga Classes</h2>
+    <p class="yoga-classes-desc">Explore our carefully curated yoga classes, each crafted to support your journey toward balance, flexibility, and inner peace. Whether you're a beginner or advanced practitioner, you'll find a class that nurtures your body and calms your mind.</p>
+    <a href="#" class="yoga-classes-btn">View All Classes</a>
+  </div>
+
+  <!-- Right Grid -->
+  <div class="yoga-classes-grid">
+
+    <div class="yoga-card">
+      <div class="yoga-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#204878" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 2C8 8 6 11 6 14a6 6 0 0 0 12 0c0-3-2-6-6-12z"/>
+        </svg>
+      </div>
+      <h3>Vinyasa Flow</h3>
+      <p>A dynamic yoga sequence that connects breath to movement, building strength, balance, flexibility, and endurance.</p>
+    </div>
+
+    <div class="yoga-card">
+      <div class="yoga-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#204878" stroke-width="1.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a10 10 0 0 1 0 20A10 10 0 0 0 12 2z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+      </div>
+      <h3>Hatha Yoga</h3>
+      <p>A traditional practice focused on posture and breathing to promote relaxation, alignment, and inner calm.</p>
+    </div>
+
+    <div class="yoga-card">
+      <div class="yoga-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#204878" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M20 4L8.5 15.5M15 4h5v5M9 20H4v-5"/>
+        </svg>
+      </div>
+      <h3>Yin Yoga</h3>
+      <p>A slow-paced class targeting deep connective tissues for improved flexibility, mindfulness, and stress relief.</p>
+    </div>
+
+    <div class="yoga-card">
+      <div class="yoga-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#204878" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M6.5 6.5l11 11M17 7l-1.5 4.5L20 13M7 17l4.5-1.5L13 20"/>
+          <circle cx="5" cy="5" r="2"/>
+          <circle cx="19" cy="19" r="2"/>
+        </svg>
+      </div>
+      <h3>Power Yoga</h3>
+      <p>An energetic session designed to boost stamina, burn calories, and build total body strength and focus.</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.yoga-classes-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Column */
+.yoga-classes-left {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+.yoga-classes-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #0E2C4F;
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+}
+
+.yoga-classes-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.yoga-classes-btn {
+  display: inline-block;
+  background-color: #204878;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.yoga-classes-btn:hover {
+  background-color: #1C3C68;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Right Grid */
+.yoga-classes-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.yoga-card {
+  background-color: #C6CCC6;
+  border: 1px solid #809AB1;
+  border-radius: 16px;
+  padding: 36px 32px;
+  transition: box-shadow 0.3s ease;
+}
+
+.yoga-card:hover {
+  box-shadow: 0 6px 24px rgba(32, 72, 120, 0.12);
+}
+
+.yoga-icon {
+  margin-bottom: 24px;
+}
+
+.yoga-icon svg {
+  stroke: #204878;
+}
+
+.yoga-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0 0 14px 0;
+}
+
+.yoga-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .yoga-classes-section {
+    gap: 36px;
+    padding: 60px 40px;
+  }
+  .yoga-classes-title {
+    font-size: 40px;
+  }
+}
+
+/* Mobile - 900px */
+@media (max-width: 900px) {
+  .yoga-classes-section {
+    flex-direction: column;
+    padding: 50px 24px;
+  }
+  .yoga-classes-left {
+    max-width: 100%;
+  }
+  .yoga-classes-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .yoga-classes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

@@ -1,0 +1,290 @@
+<div class="products-section">
+
+  <!-- Section Header -->
+  <div class="products-header">
+    <div class="products-header-left">
+      <div class="products-label">
+        <span>Our Products</span>
+        <div class="products-label-line"></div>
+      </div>
+      <h2 class="products-title">Holistic Wellness Essentials</h2>
+      <p class="products-desc">Explore our carefully curated products designed to support your yoga journey, promote inner peace, and enhance your everyday wellness experience.</p>
+    </div>
+    <div class="products-header-right">
+      <a href="#" class="products-load-btn">Load More</a>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Zen Mat" />
+      </div>
+      <div class="product-info">
+        <h3>Zen Mat</h3>
+        <p class="product-price">$49.00</p>
+        <a href="#" class="product-btn">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Serenity Candle" />
+      </div>
+      <div class="product-info">
+        <h3>Serenity Candle</h3>
+        <p class="product-price">$29.00</p>
+        <a href="#" class="product-btn">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.jpg" alt="Herbal Tea" />
+      </div>
+      <div class="product-info">
+        <h3>Herbal Tea</h3>
+        <p class="product-price">$35.00</p>
+        <a href="#" class="product-btn">Order Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+    /* Section Wrapper */
+.products-section {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Row */
+.products-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.products-header-left {
+  flex: 1;
+}
+
+/* Label */
+.products-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.products-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.products-label-line {
+  height: 1px;
+  width: 120px;
+  background-color: #809AB1;
+}
+
+/* Title */
+.products-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0 0 16px 0;
+  line-height: 1.15;
+}
+
+/* Description */
+.products-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+/* Load More Button */
+.products-header-right {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.products-load-btn {
+  display: inline-block;
+  background-color: #204878;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.products-load-btn:hover {
+  background-color: transparent;
+  border-color: #809AB1;
+  color: #0E2C4F;
+  text-decoration: none;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #809AB1;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 40px rgba(32, 72, 120, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Product Image */
+.product-img-wrap {
+  overflow: hidden;
+  background-color: #C6CCC6;
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.04);
+}
+
+/* Product Info */
+.product-info {
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.product-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0 0 10px 0;
+}
+
+.product-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #204878;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+/* Order Now Button */
+.product-btn {
+  display: block;
+  background-color: #0E2C4F;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: transparent;
+  border-color: #204878;
+  color: #0E2C4F;
+  text-decoration: none;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .products-section {
+    padding: 60px 40px;
+  }
+
+  .products-title {
+    font-size: 40px;
+  }
+
+  .products-grid {
+    gap: 16px;
+  }
+
+  .product-img-wrap img {
+    height: 260px;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .products-section {
+    padding: 48px 24px;
+  }
+
+  .products-header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .products-title {
+    font-size: 30px;
+  }
+
+  .products-label-line {
+    width: 80px;
+  }
+
+  .products-load-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-img-wrap img {
+    height: 280px;
+  }
+}
+</style>

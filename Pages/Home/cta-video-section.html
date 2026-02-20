@@ -1,0 +1,177 @@
+<div class="cta-video-section">
+  <a href="#" class="cta-learn-btn">Learn More</a>
+  <div class="cta-video-wrapper">
+    <button class="cta-play-btn" onclick="document.getElementById('yoga-video-popup').style.display='flex'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+        <polygon points="6,3 20,12 6,21" fill="#204878" stroke="#204878" stroke-width="1"/>
+      </svg>
+    </button>
+    <div class="cta-video-label">
+      <span class="cta-video-title">INTRO VIDEO</span>
+      <span class="cta-video-duration">80 seconds</span>
+    </div>
+  </div>
+</div>
+
+<!-- Video Popup Modal -->
+<div id="yoga-video-popup" class="cta-modal">
+  <div class="cta-modal-inner">
+    <button class="cta-modal-close" onclick="document.getElementById('yoga-video-popup').style.display='none'">✕</button>
+    <iframe
+      width="100%"
+      height="100%"
+      src="YOUR-YOUTUBE-EMBED-URL"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<style>
+.cta-video-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Learn More Button */
+.cta-learn-btn {
+  display: inline-block;
+  background-color: #204878;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.cta-learn-btn:hover {
+  background-color: #1C3C68;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Video Wrapper */
+.cta-video-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+/* Play Button Circle */
+.cta-play-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2.5px solid #204878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.cta-play-btn:hover {
+  border-color: #0E2C4F;
+  transform: scale(1.05);
+}
+
+.cta-play-btn svg polygon {
+  fill: #204878 !important;
+}
+
+/* Video Label */
+.cta-video-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cta-video-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0E2C4F;
+  letter-spacing: 1.5px;
+}
+
+.cta-video-duration {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #1C3C68;
+}
+
+/* Modal Popup */
+.cta-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 44, 79, 0.80);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-modal-inner {
+  position: relative;
+  width: 80%;
+  max-width: 860px;
+  height: 480px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cta-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .cta-video-section {
+    padding: 36px 40px;
+    gap: 20px;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .cta-video-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 36px 24px;
+    gap: 20px;
+  }
+  .cta-learn-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .cta-modal-inner {
+    width: 95%;
+    height: 240px;
+  }
+}
+</style>
