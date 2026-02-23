@@ -1,0 +1,230 @@
+<div class="about-banner-section">
+
+  <!-- Background Image -->
+  <img src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.webp" alt="Yoga Retreat" class="about-banner-bg" />
+
+  <!-- Dark Overlay -->
+  <div class="about-banner-overlay"></div>
+
+  <!-- Content -->
+  <div class="about-banner-content">
+
+    <!-- Left Text -->
+    <div class="about-banner-left">
+      <h2 class="about-banner-title">Your Soulful Retreat Awaits</h2>
+      <p class="about-banner-desc">Step away from the noise and into a serene, healing yoga experience surrounded by nature.</p>
+    </div>
+
+    <!-- Right Play Button -->
+    <div class="about-banner-right">
+      <button class="about-banner-play" onclick="document.getElementById('about-video-popup').style.display='flex'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+          <polygon points="6,3 20,12 6,21" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Video Popup Modal -->
+<div id="about-video-popup" class="about-video-modal">
+  <div class="about-video-modal-inner">
+    <button class="about-video-modal-close" onclick="document.getElementById('about-video-popup').style.display='none'">✕</button>
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://youtu.be/iCSg_ul3G2w?si=eD45xB5MNnoesaWd"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<style>
+/* Section Wrapper */
+.about-banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Background Image */
+.about-banner-bg {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark Overlay */
+.about-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(14, 44, 79, 0.80) 0%,
+    rgba(14, 44, 79, 0.30) 50%,
+    rgba(14, 44, 79, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+/* Content Layer */
+.about-banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 48px 60px;
+  gap: 40px;
+}
+
+/* Left Text */
+.about-banner-left {
+  flex: 1;
+  max-width: 640px;
+}
+
+/* Title */
+.about-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+/* Description */
+.about-banner-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(198, 204, 198, 0.90);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 500px;
+}
+
+/* Play Button */
+.about-banner-right {
+  flex-shrink: 0;
+}
+
+.about-banner-play {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.about-banner-play:hover {
+  background-color: #204878;
+  border-color: #204878;
+  transform: scale(1.08);
+}
+
+/* Video Modal */
+.about-video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 44, 79, 0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-video-modal-inner {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-video-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .about-banner-bg {
+    height: 400px;
+  }
+
+  .about-banner-content {
+    padding: 36px 40px;
+  }
+
+  .about-banner-title {
+    font-size: 34px;
+  }
+
+  .about-banner-play {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .about-banner-section {
+    border-radius: 12px;
+  }
+
+  .about-banner-bg {
+    height: 360px;
+  }
+
+  .about-banner-content {
+    padding: 28px 24px;
+    align-items: flex-end;
+  }
+
+  .about-banner-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .about-banner-desc {
+    font-size: 12px;
+  }
+
+  .about-banner-play {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-video-modal-inner {
+    width: 95%;
+    height: 240px;
+  }
+}
+</style>
