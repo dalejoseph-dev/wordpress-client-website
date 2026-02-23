@@ -1,0 +1,129 @@
+<div class="about-brands-section">
+  <p class="about-brands-title">We team up with trusted brands and experts</p>
+  <div class="about-brands-grid">
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-1-2.webp" alt="Brand 1" />
+    </div>
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-2-2.webp" alt="Brand 2" />
+    </div>
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-4-1.webp" alt="Brand 3" />
+    </div>
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-3-1.webp" alt="Brand 4" />
+    </div>
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-5-1.webp" alt="Brand 5" />
+    </div>
+
+    <div class="about-brand-card">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-2-2-1.webp" alt="Brand 6" />
+    </div>
+
+  </div>
+</div>
+
+<style>
+/* Section Wrapper */
+.about-brands-section {
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.about-brands-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* Grid */
+.about-brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Brand Card */
+.about-brand-card {
+  background-color: #ffffff;
+  border: 1px solid #809AB1;
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 80px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.about-brand-card:hover {
+  border-color: #204878;
+  box-shadow: 0 4px 20px rgba(32, 72, 120, 0.12);
+}
+
+/* Logo Image */
+.about-brand-card img {
+  max-width: 100%;
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.about-brand-card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .about-brands-section {
+    padding: 50px 40px;
+  }
+
+  .about-brand-card {
+    width: 160px;
+    height: 72px;
+    padding: 20px 24px;
+  }
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .about-brands-section {
+    padding: 40px 24px;
+  }
+
+  .about-brands-title {
+    font-size: 16px;
+  }
+
+  .about-brands-grid {
+    gap: 12px;
+  }
+
+  .about-brand-card {
+    width: 140px;
+    height: 68px;
+    padding: 16px 20px;
+  }
+}
+</style>
