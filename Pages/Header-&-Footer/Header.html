@@ -1,0 +1,467 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<header class="pro-header">
+  <nav class="pro-nav">
+
+    <!-- Logo -->
+    <a href="#" class="pro-nav-logo">
+  <img src="https://localhost/wordpress/wp-content/uploads/2026/02/logo-ipsum-1-2.png" alt="Nivaya Logo" class="pro-nav-logo-img" />
+</a>
+
+    <!-- Center Links -->
+    <ul class="pro-nav-links">
+
+      <li class="pro-nav-item">
+        <a href="Home" class="pro-nav-link active">Home</a>
+      </li>
+
+      <li class="pro-nav-item">
+        <a href="About" class="pro-nav-link">About Us</a>
+      </li>
+<!--
+      <li class="pro-nav-item pro-has-dropdown">
+        <a href="#" class="pro-nav-link">
+          Classes
+          <svg class="pro-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </a>
+        <div class="pro-dropdown">
+          <a href="#">Vinyasa Flow</a>
+          <a href="#">Hatha Yoga</a>
+          <a href="#">Yin Yoga</a>
+          <a href="#">Power Yoga</a>
+          <a href="#">Kundalini Yoga</a>
+        </div>
+      </li>
+      <li class="pro-nav-item pro-has-dropdown">
+        <a href="#" class="pro-nav-link">
+          Pages
+          <svg class="pro-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </a>
+        <div class="pro-dropdown">
+          <a href="#">Pricing</a>
+          <a href="#">Instructors</a>
+          <a href="#">Gallery</a>
+          <a href="#">Testimonials</a>
+        </div>
+      </li>
+
+      <li class="pro-nav-item pro-has-dropdown">
+        <a href="#" class="pro-nav-link">
+          Blog
+          <svg class="pro-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </a>
+        <div class="pro-dropdown">
+          <a href="#">Latest Posts</a>
+          <a href="#">Categories</a>
+        </div>
+      </li>
+-->
+
+      <li class="pro-nav-item">
+        <a href="Contact" class="pro-nav-link">Contact Us</a>
+      </li>
+
+    </ul>
+
+    <!-- Right Side -->
+    <div class="pro-nav-right">
+      <a href="tel:+15551234567" class="pro-nav-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" stroke="#ffffff" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +1 (555) 123 4567
+      </a>
+      <a href="#" class="pro-nav-btn">Get In Touch</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="pro-hamburger" id="proHamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="pro-mobile-menu" id="proMobileMenu">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  
+  <!--
+  <details>
+    <summary>Classes</summary>
+    <a href="#">Vinyasa Flow</a>
+    <a href="#">Hatha Yoga</a>
+    <a href="#">Yin Yoga</a>
+    <a href="#">Power Yoga</a>
+  </details>
+  <details>
+    <summary>Pages</summary>
+    <a href="#">Pricing</a>
+    <a href="#">Instructors</a>
+    <a href="#">Gallery</a>
+  </details>
+  <details>
+    <summary>Blog</summary>
+    <a href="#">Latest Posts</a>
+    <a href="#">Categories</a>
+  </details>
+  -->
+  
+  <a href="#">Contact Us</a>
+  <a href="#" class="pro-mobile-btn">Get In Touch</a>
+</div>
+
+<script>
+  const proHamburger = document.getElementById('proHamburger');
+  const proMobileMenu = document.getElementById('proMobileMenu');
+  proHamburger.addEventListener('click', function() {
+    proMobileMenu.classList.toggle('pro-menu-open');
+    proHamburger.classList.toggle('pro-ham-active');
+  });
+  
+  document.addEventListener('DOMContentLoaded', (event) => {
+    // Find the specific link
+    const targetLink = document.querySelector('YOUR_MENU_ITEM_SELECTOR');
+
+    if (targetLink) {
+        // Store the initial link
+        const initialUrl = targetLink.href;
+        const newUrl = 'https://www.yournewlink.com'; // The URL you want to change to
+
+        // Add a click event listener
+        targetLink.addEventListener('click', function(e) {
+            // Prevent the default navigation initially
+            e.preventDefault();
+
+            // Check the current href and update it for subsequent clicks
+            if (this.href === initialUrl) {
+                this.href = newUrl;
+            } else {
+                // Optional: logic to revert or change to another link
+            }
+
+            // Manually navigate to the new or original URL
+            window.location.href = this.href;
+        });
+    }
+});
+
+</script>
+
+<style>
+   /* ── Header Wrapper ── */
+.pro-header {
+  background-color: #204878;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 20px rgba(32, 72, 120, 0.3);
+}
+
+/* ── Nav Container ── */
+.pro-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: 72px;
+  gap: 40px;
+}
+
+/* ── Logo ── */
+.pro-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.pro-nav-logo span {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.pro-nav-logo svg {
+  stroke: #C6CCC6;
+}
+
+.pro-nav-logo-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+/* ── Nav Links ── */
+.pro-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.pro-nav-item {
+  position: relative;
+}
+
+.pro-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #C6CCC6;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: color 0.3s ease, background 0.3s ease;
+  white-space: nowrap;
+}
+
+.pro-nav-link:hover {
+  color: #ffffff;
+  background-color: #1C3C68;
+  text-decoration: none;
+}
+
+.pro-chevron {
+  transition: transform 0.3s ease;
+  color: #809AB1;
+}
+
+.pro-has-dropdown:hover .pro-chevron {
+  transform: rotate(180deg);
+  color: #ffffff;
+}
+
+/* ── Dropdown ── */
+.pro-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: #1C3C68;
+  border: 1px solid #809AB1;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 200px;
+  box-shadow: 0 12px 40px rgba(14, 44, 79, 0.4);
+  z-index: 9998;
+}
+
+.pro-has-dropdown:hover .pro-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.pro-dropdown a {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #C6CCC6;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.pro-dropdown a:hover {
+  background-color: #204878;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ── Right Side ── */
+.pro-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.pro-nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #809AB1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.pro-nav-phone:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pro-nav-phone svg {
+  stroke: #809AB1;
+}
+
+/* ── CTA Button ── */
+.pro-nav-btn {
+  display: inline-block;
+  background-color: #1C3C68;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid #809AB1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.pro-nav-btn:hover {
+  background-color: transparent;
+  border: 2px solid #809AB1;
+  border-color: #1C3C68;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ── Hamburger ── */
+.pro-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.pro-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #C6CCC6;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.pro-hamburger.pro-ham-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.pro-hamburger.pro-ham-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.pro-hamburger.pro-ham-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Menu ── */
+.pro-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #1C3C68;
+  padding: 16px 24px 24px;
+  border-top: 1px solid #809AB1;
+}
+
+.pro-mobile-menu.pro-menu-open {
+  display: flex;
+}
+
+.pro-mobile-menu a {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #C6CCC6;
+  text-decoration: none;
+  padding: 14px 0;
+  border-bottom: 1px solid #204878;
+  transition: color 0.2s ease;
+}
+
+.pro-mobile-menu a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pro-mobile-menu details {
+  border-bottom: 1px solid #204878;
+}
+
+.pro-mobile-menu details summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #C6CCC6;
+  padding: 14px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.pro-mobile-menu details summary::-webkit-details-marker {
+  display: none;
+}
+
+.pro-mobile-menu details a {
+  padding: 10px 0 10px 16px;
+  font-size: 13px;
+  border-bottom: none;
+  color: #809AB1;
+}
+
+.pro-mobile-btn {
+  margin-top: 20px;
+  background-color: #204878 !important;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 14px 0 !important;
+  border-radius: 50px;
+  border-bottom: none !important;
+  font-weight: 600 !important;
+}
+
+/* ── Tablet 1024px ── */
+@media (max-width: 1024px) {
+  .pro-nav {
+    padding: 0 40px;
+    gap: 24px;
+  }
+
+  .pro-nav-phone {
+    display: none;
+  }
+
+  .pro-nav-link {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+/* ── Mobile 768px ── */
+@media (max-width: 768px) {
+  .pro-nav {
+    padding: 0 24px;
+    height: 64px;
+  }
+
+  .pro-nav-links,
+  .pro-nav-right {
+    display: none;
+  }
+
+  .pro-hamburger {
+    display: flex;
+  }
+}
+</style>
