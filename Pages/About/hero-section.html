@@ -1,0 +1,389 @@
+<section class="ys-hero">
+
+  <!-- Left: Text Content -->
+  <div class="ys-hero__content">
+    <span class="ys-eyebrow">Mindful Movement</span>
+
+    <h1 class="ys-hero__title">
+      Empowering Wellness Through <br/>
+      <em>Yoga</em>
+    </h1>
+
+    <p class="ys-hero__desc">
+      Join our expert-led yoga sessions designed for all levels.
+      Whether you're a beginner or an advanced practitioner, we
+      guide you toward balance, strength, and inner peace.
+    </p>
+
+    <!-- Stats -->
+    <div class="ys-stats">
+      <div class="ys-stat">
+        <span class="ys-stat__number">1,650<sup>+</sup></span>
+        <span class="ys-stat__label">Clients Served</span>
+      </div>
+      <div class="ys-stat">
+        <span class="ys-stat__number">12<sup>+</sup></span>
+        <span class="ys-stat__label">Expert Instructors</span>
+      </div>
+      <div class="ys-stat">
+        <span class="ys-stat__number">98<sup>%</sup></span>
+        <span class="ys-stat__label">Satisfaction Rate</span>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="ys-actions">
+      <a href="#" class="ys-btn ys-btn--primary">Book a Class</a>
+      <a href="#" class="ys-btn ys-btn--outline">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Right: Image -->
+  <div class="ys-hero__visual">
+    <div class="ys-image-wrap">
+
+      <!--
+        REPLACE the src below with your WordPress Media Library URL.
+        Example: https://yoursite.com/wp-content/uploads/2024/01/yoga-hero.jpg
+      -->
+      <img
+        src="https://localhost/wordpress/wp-content/uploads/2026/02/thanhkhuong128-beautiful-natural-image-1844362_1920.webp"
+        alt="Yoga instructors in tree pose"
+        class="ys-hero__image"
+      />
+
+      <!-- Floating Badge -->
+      <div class="ys-badge">
+        <svg class="ys-badge__icon" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <div>
+          <strong>1,650+</strong>
+          <span>Clients Served</span>
+        </div>
+      </div>
+
+      <div class="ys-accent-circle"></div>
+    </div>
+  </div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+/* ------------------------------------------------------------
+   COLOR SYSTEM – Edit your brand colors here in one place
+   ------------------------------------------------------------ */
+:root {
+  --ys-primary:   #204878;   /* Deep Steel Blue   */
+  --ys-secondary: #1C3C68;   /* Dark Navy Blue     */
+  --ys-accent:    #809AB1;   /* Muted Blue-Gray    */
+  --ys-dark:      #0E2C4F;   /* Very Dark Blue     */
+  --ys-neutral:   #C6CCC6;   /* Light Gray-Green   */
+  --ys-white:     #FFFFFF;
+}
+
+/* ------------------------------------------------------------
+   GOOGLE FONTS – Playfair Display + DM Sans
+   Add this to your theme's header or via a plugin:
+   https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap
+   ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+   HERO SECTION LAYOUT
+   ------------------------------------------------------------ */
+.ys-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background-color: var(--ys-neutral);
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------
+   LEFT: TEXT CONTENT
+   ------------------------------------------------------------ */
+.ys-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ys-eyebrow {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ys-accent);
+  background: rgba(32, 72, 120, 0.08);
+  border: 1px solid rgba(128, 154, 177, 0.4);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.ys-hero__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ys-primary);
+  margin: 0; /* override WordPress heading margins */
+}
+
+.ys-hero__title em {
+  font-style: italic;
+  color: var(--ys-secondary);
+  position: relative;
+}
+
+.ys-hero__title em::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ys-accent), transparent);
+  border-radius: 2px;
+}
+
+.ys-hero__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--ys-primary);
+  max-width: 440px;
+  line-height: 1.75;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Stats Row */
+.ys-stats {
+  display: flex;
+  gap: 2.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(128, 154, 177, 0.3);
+  border-bottom: 1px solid rgba(128, 154, 177, 0.3);
+}
+
+.ys-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ys-stat__number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--ys-primary);
+  line-height: 1;
+}
+
+.ys-stat__number sup {
+  font-size: 0.95rem;
+  color: var(--ys-accent);
+}
+
+.ys-stat__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ys-accent);
+  font-weight: 500;
+}
+
+/* CTA Buttons */
+.ys-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ys-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.ys-btn--primary {
+  background: var(--ys-primary);
+  color: var(--ys-white) !important;
+  box-shadow: 0 8px 24px rgba(32, 72, 120, 0.30);
+}
+
+.ys-btn--primary:hover {
+  background: var(--ys-secondary);
+  color: var(--ys-white) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(32, 72, 120, 0.40);
+  text-decoration: none;
+}
+
+.ys-btn--outline {
+  background: transparent;
+  color: var(--ys-primary) !important;
+  border: 2px solid var(--ys-primary);
+}
+
+.ys-btn--outline:hover {
+  background: var(--ys-primary);
+  color: var(--ys-white) !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   RIGHT: IMAGE CARD
+   ------------------------------------------------------------ */
+.ys-hero__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ys-image-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+
+.ys-hero__image {
+  width: 100%;
+  border-radius: 60px;
+  box-shadow: 0 20px 60px rgba(14, 44, 79, 0.15);
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  display: block;
+}
+
+/* Floating Badge */
+.ys-badge {
+  position: absolute;
+  bottom: 28px;
+  right: -20px;
+  background: var(--ys-white);
+  border-radius: 16px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 40px rgba(14, 44, 79, 0.18);
+  min-width: 180px;
+  animation: ysBadgeFloat 4s ease-in-out infinite;
+}
+
+.ys-badge__icon {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background: var(--ys-primary);
+  border-radius: 8px;
+  flex-shrink: 0;
+  stroke: var(--ys-white);
+  box-sizing: border-box;
+}
+
+.ys-badge strong {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--ys-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ys-badge span {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: var(--ys-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+/* Decorative circle */
+.ys-accent-circle {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ys-accent) 0%, transparent 70%);
+  opacity: 0.18;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------
+   ANIMATION
+   ------------------------------------------------------------ */
+@keyframes ysBadgeFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE
+   ------------------------------------------------------------ */
+@media (max-width: 900px) {
+  .ys-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 60px 24px;
+  }
+
+  .ys-hero__visual {
+    order: -1;
+  }
+
+  .ys-image-wrap {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .ys-badge {
+    right: 0;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ys-stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .ys-actions {
+    flex-direction: column;
+  }
+
+  .ys-btn {
+    text-align: center;
+    width: 100%;
+  }
+}
+</style>
+</section>
