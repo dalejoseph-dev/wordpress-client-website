@@ -1,0 +1,307 @@
+<div class="contact-form-section">
+
+  <!-- Section Header -->
+  <div class="contact-form-header">
+    <div class="contact-form-label">
+      <span>Contact Us</span>
+      <div class="contact-form-label-line"></div>
+    </div>
+    <h2 class="contact-form-title">Get In Touch Today</h2>
+  </div>
+
+  <!-- Two Column Layout -->
+  <div class="contact-form-layout">
+
+    <!-- Left - Image -->
+    <div class="contact-form-left">
+      <img src="https://localhost/wordpress/wp-content/uploads/2026/02/olgaozik-downtown-4045036_1920.webp" alt="Yoga Class" />
+    </div>
+
+    <!-- Right - Form -->
+    <div class="contact-form-right">
+      <h3 class="contact-form-subtitle">Let's Get In Touch</h3>
+
+      <div class="contact-form-fields">
+
+        <!-- Row 1 -->
+        <div class="contact-form-row">
+          <div class="contact-form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Your First Name" />
+          </div>
+          <div class="contact-form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Your Last Name" />
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="contact-form-row">
+          <div class="contact-form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="contact-form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Your Phone Number" />
+          </div>
+        </div>
+
+        <!-- Row 3 - Message -->
+        <div class="contact-form-group contact-form-full">
+          <label>Message</label>
+          <textarea placeholder="Your Message" rows="6"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="contact-form-submit">
+          <button type="submit" class="contact-form-btn">Send Message</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+/* Section Wrapper */
+.contact-form-section {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.contact-form-header {
+  margin-bottom: 48px;
+}
+
+/* Label */
+.contact-form-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-form-label span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C3C68;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.contact-form-label-line {
+  height: 1px;
+  width: 140px;
+  background-color: #809AB1;
+}
+
+/* Title */
+.contact-form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0;
+  line-height: 1.15;
+}
+
+/* Two Column Layout */
+.contact-form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Left Image */
+.contact-form-left {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact-form-left img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Right Form Card */
+.contact-form-right {
+  background-color: #ffffff;
+  border: 1px solid #809AB1;
+  border-radius: 16px;
+  padding: 48px 40px;
+}
+
+/* Form Subtitle */
+.contact-form-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #0E2C4F;
+  margin: 0 0 36px 0;
+  line-height: 1.2;
+}
+
+/* Form Fields */
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Row */
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Group */
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form-full {
+  width: 100%;
+}
+
+/* Label */
+.contact-form-group label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0E2C4F;
+  letter-spacing: 0.3px;
+}
+
+/* Input */
+.contact-form-group input,
+.contact-form-group textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #1C3C68;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #809AB1;
+  padding: 10px 0;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+  color: #809AB1;
+  font-size: 13px;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+  border-color: #204878;
+}
+
+/* Textarea */
+.contact-form-group textarea {
+  min-height: 120px;
+  border: 1.5px solid #809AB1;
+  border-radius: 8px;
+  padding: 14px 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-group textarea:focus {
+  border-color: #204878;
+}
+
+/* Submit */
+.contact-form-submit {
+  padding-top: 8px;
+}
+
+.contact-form-btn {
+  display: inline-block;
+  background-color: #0E2C4F;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 40px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form-btn:hover {
+  background-color: transparent;
+  border-color: #204878;
+  color: #0E2C4F;
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .contact-form-section {
+    padding: 60px 40px;
+  }
+
+  .contact-form-title {
+    font-size: 40px;
+  }
+
+  .contact-form-right {
+    padding: 36px 28px;
+  }
+
+  .contact-form-subtitle {
+    font-size: 26px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 48px 24px;
+  }
+
+  .contact-form-title {
+    font-size: 30px;
+  }
+
+  .contact-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-left img {
+    min-height: 320px;
+    height: 320px;
+  }
+
+  .contact-form-right {
+    padding: 28px 20px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-form-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
